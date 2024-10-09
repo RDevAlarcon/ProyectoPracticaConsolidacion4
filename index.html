@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Consolidacion4</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Archivo CSS personalizado -->
+    <link rel="stylesheet" href="./assets/css/estilos.css">
+  </head>
+  
+  <body onload="asignarEventos()">
+    <!-- Contenedor principal -->
+    <div class="container">
+      <h2>Productos Disponibles</h2>
+    </div>
+    
+    <div class="container">
+      <div class="card-container bg-light" style="display: flex; flex-wrap: wrap; gap: 45px;">
+        
+        <!-- Tarjeta de Leche -->
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/img/Leche.jpg" class="card-img-top" alt="leche">
+          <div class="card-body">
+            <label for="txtLeche">Leche $1000</label><br>
+            <input type="number" id="txtLeche" placeholder="Ingrese cantidad">
+          </div>
+        </div>
+        
+        <!-- Tarjeta de Pan de Molde -->
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/img/pan de molde.webp" class="card-img-top" alt="pan de molde">
+          <div class="card-body">
+            <label for="txtPan">Pan de Molde $2000</label><br>
+            <input type="number" id="txtPan" placeholder="Ingrese cantidad">
+          </div>
+        </div>
+        
+        <!-- Tarjeta de Queso -->
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/img/queso.jpg" class="card-img-top" alt="queso">
+          <div class="card-body">
+            <label for="txtQueso">Queso $1200</label><br>
+            <input type="number" id="txtQueso" placeholder="Ingrese cantidad">
+          </div>
+        </div>
+        
+        <!-- Tarjeta de Mermelada -->
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/img/mermelada.jpg" class="card-img-top" alt="mermelada">
+          <div class="card-body">
+            <label for="txtMermelada">Mermelada $890</label><br>
+            <input type="number" id="txtMermelada" placeholder="Ingrese cantidad">
+          </div>
+        </div>
+        
+        <!-- Tarjeta de Azúcar -->
+        <div class="card" style="width: 18rem;">
+          <img src="./assets/img/AZUCAR.jpg" class="card-img-top" alt="azucar">
+          <div class="card-body">
+            <label for="txtAzucar">Azúcar $1300</label><br>
+            <input type="number" id="txtAzucar" placeholder="Ingrese cantidad">
+          </div>
+        </div>
+        
+      </div>
+    </div><br>
+    
+    <!-- Botón de Calcular -->
+    <div class="container">
+      <input type="button" id="btnCalcular" class="btn btn-success" value="Calcular">
+    </div><br>
+    
+    <!-- Contenedor de Detalles de la Compra -->
+    <div class="container">
+      <p><h4>Valor Final a Pagar:</h4><span id="txtValorFinalAPagar">0</span></p>
+      <h3>Detalles de la compra:</h3>
+      <p id="prfDetallesCompra"></p>
+    </div>
+    
+    <!-- Scripts JS -->
+    <script src="./assets/js/logica.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
